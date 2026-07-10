@@ -1,0 +1,27 @@
+name: Bug Report
+description: Report a bug or issue for any of our extensions
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Which product are you reporting an issue for?
+      description: Type the name of the extension or feature you are using.
+      placeholder: e.g., Noria, the PDF extension, or something else...
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: e.g., Pakistan
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of the Issue
+      description: Please describe what happened and how to reproduce it.
+    validations:
+      required: true
