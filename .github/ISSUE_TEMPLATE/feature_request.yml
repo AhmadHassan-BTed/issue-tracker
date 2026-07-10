@@ -1,0 +1,26 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: product
+    attributes:
+      label: Which product is this feature for?
+      placeholder: Tell us what tool you are using...
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: e.g., Pakistan
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: What would you like to see added or changed?
+    validations:
+      required: true
